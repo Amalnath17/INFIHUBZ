@@ -1,0 +1,39 @@
+/* Navbar.css */
+
+.navbar-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: white;
+    border-bottom: 1px solid #29fa45; 
+    margin-left: 20px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .logo {
+    height: 30px; 
+  }
+  
+  .navbar-logo h1 {
+    margin: 10px 0 0 0; 
+    font-size: 24px; 
+    text-align: center; 
+  }
+  
+  .profileicon {
+    display: flex;
+    align-items: center; 
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  
+  .profile {
+    height: 30px; 
+  }
+  

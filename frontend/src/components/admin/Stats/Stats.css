@@ -1,0 +1,53 @@
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stats h1{
+    padding: 15px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+  }
+  .stat-item {
+    background-color: #ffffff;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stat-item h2{
+    color: black  ;
+  }
+  .chart-container {
+    flex: 3; /* Adjust this to control the width ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+  
+  .chart-container h2 {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  

@@ -1,0 +1,97 @@
+/* Global Styles */
+:root {
+    --primary-color: rgb(35, 236, 45);
+    --secondary-color: rgb(102, 199, 38);
+    --highlight-color: rgb(3, 255, 66);
+    --light-background: #f9f9f9;
+    --dark-text: #505050;
+}
+
+
+.order-list{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.order{
+    margin-left: 40px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Reduced gap for a cleaner look */
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 15px; /* Slightly larger font size for readability */
+    color: var(--dark-text);
+    background-color: var(--light-background);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Typography Enhancements */
+.order-item-food, .order-item-name {
+    font-weight: 600;
+}
+
+.order-item-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px; 
+}
+
+.order-item-address {
+    margin-bottom: 30px;
+}
+
+/* Select Box Styles */
+.order-item select {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid var(--highlight-color);
+    width: max(12vw, 120px); /* Adjusted for better responsiveness */
+    padding: 12px;
+    border-radius: 4px; /* Rounded corners */
+    outline: none;
+    font-size: 14px; /* Consistent font size */
+}
+
+.order-item select:focus {
+    border-color: var(--highlight-color); /* Enhanced focus state */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on focus */
+}
+
+.order-item img {
+    width: 120px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image scales correctly */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    margin-right: 10px; /* Space between the image and other content */
+}
+
+/* Light Color Scheme */
+.lightcolors .order-item select {
+    background-color: #ffe8e4;
+    color: black;
+    border: 1px solid rgb(18, 214, 44);
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    .order-item {
+        font-size: 13px; /* Adjusted font size for better readability on smaller screens */
+        grid-template-columns: 0.5fr 2fr 1fr; /* Simplified layout */
+        padding: 10px;
+    }
+
+    .order-item select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .order-item img {
+        width: 50px; /* Slightly larger image for better visibility */
+    }
+}
